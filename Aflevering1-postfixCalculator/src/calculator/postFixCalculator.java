@@ -12,9 +12,6 @@ public class postFixCalculator implements IpostfixCalculatorADT {
     @Override
     public int evaluateExpression(ArrayList<IToken> tokenList) {
 
-        int a = 0;
-        int b = 0;
-
         LinkedListQueueADT<IToken> returnStack = new LinkedListQueueADT<>();
 
         for (IToken index : tokenList) {
